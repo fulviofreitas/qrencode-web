@@ -1,22 +1,28 @@
-# QR Code Generator
+# 📱 QR Code Generator
 
-A simple web app that generates QR codes from text or URLs, built with Next.js and deployable on Vercel.
+> Turn any text or URL into a scannable QR code — instantly.
 
-## Features
+🌐 **Live demo:** [qrencode-web.vercel.app](https://qrencode-web.vercel.app)
 
-- Generate QR codes from any text or URL
-- Clean, responsive UI
-- Download generated QR codes as PNG
-- Serverless-ready — no CLI dependencies
+---
 
-## Tech Stack
+## ✨ Features
 
-- **Framework**: Next.js 14 (Pages Router)
-- **QR Code Library**: [`qrcode`](https://www.npmjs.com/package/qrcode)
-- **Styling**: CSS Modules
-- **Deployment**: Vercel
+- 🔤 Generate QR codes from any text or URL
+- 🎨 Clean, responsive UI
+- 💾 Download generated QR codes as PNG
+- ⚡ Serverless-ready — no CLI dependencies
 
-## Getting Started
+## 🛠️ Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js 14 (Pages Router) |
+| QR Library | [`qrcode`](https://www.npmjs.com/package/qrcode) |
+| Styling | CSS Modules |
+| Deployment | Vercel |
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -32,9 +38,9 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser. 🎉
 
-## Deploy to Vercel
+## ☁️ Deploy to Vercel
 
 ### Option A — Vercel Dashboard (recommended)
 
@@ -50,7 +56,7 @@ npm install -g vercel
 vercel
 ```
 
-## API
+## 📡 API
 
 ### `GET /api/qr?text=<value>`
 
@@ -58,23 +64,23 @@ Generates a QR code PNG for the given text.
 
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| `text`    | Yes      | Text or URL to encode (max 2048 chars) |
+| `text` | ✅ Yes | Text or URL to encode (max 2048 chars) |
 
-**Success response:**
+**✅ Success response:**
 ```json
 {
   "qrCode": "data:image/png;base64,..."
 }
 ```
 
-**Error response:**
+**❌ Error response:**
 ```json
 {
   "error": "Text parameter is required"
 }
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 qrencode-web/
@@ -90,6 +96,6 @@ qrencode-web/
 └── package.json
 ```
 
-## License
+## 📄 License
 
 MIT
